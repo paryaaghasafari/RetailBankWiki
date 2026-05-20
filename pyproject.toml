@@ -1,0 +1,15 @@
+[project]
+name = "retail-bank-wiki"
+version = "0.1.0"
+description = "Northvale Demo Bank - fictional retail banking policy & compliance wiki corpus for the GenAI RAG capstone demo"
+requires-python = "==3.11.*"
+dependencies = [
+    "reportlab>=4.0",
+    "python-docx>=1.1",
+    "matplotlib>=3.8",
+    "pillow>=10.0",
+    "mkdocs-material>=9.5",
+]
+
+[tool.uv]
+required-version = ">=0.4.0"
