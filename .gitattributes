@@ -1,0 +1,19 @@
+# Force LF for source / config / markdown
+*.md       text eol=lf
+*.py       text eol=lf
+*.yml      text eol=lf
+*.yaml     text eol=lf
+*.toml     text eol=lf
+*.txt      text eol=lf
+.gitignore text eol=lf
+.python-version text eol=lf
+
+# Mark binary attachments so git never touches their bytes
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.docx binary
+*.xlsx binary
+*.zip  binary
+uv.lock binary

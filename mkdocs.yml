@@ -1,0 +1,69 @@
+site_name: Northvale Demo Bank - Policy & Compliance Wiki
+site_description: Fictional retail banking policy & compliance wiki for the GenAI RAG capstone demo
+site_url: https://paryaaghasafari.github.io/RetailBankWiki/
+repo_url: https://github.com/paryaaghasafari/RetailBankWiki
+repo_name: paryaaghasafari/RetailBankWiki
+edit_uri: edit/main/docs/
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: Home.md
+  - Onboarding & Identity:
+      - KYC - Customer Onboarding: KYC-Customer-Onboarding-Policy.md
+      - Sanctions Screening: Sanctions-Screening-Procedures.md
+  - Financial Crime:
+      - AML Procedures: AML-Anti-Money-Laundering-Procedures.md
+  - Credit & Lending:
+      - Credit Risk Assessment: Credit-Risk-Assessment-Guidelines.md
+      - Loan Approval Thresholds: Loan-Approval-Thresholds-and-Limits.md
+  - Customer Service:
+      - Complaint Handling: Customer-Complaint-Handling-Policy.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+extra:
+  generator: false
+
+not_in_nav: |
+  _Sidebar.md
+  index.md
